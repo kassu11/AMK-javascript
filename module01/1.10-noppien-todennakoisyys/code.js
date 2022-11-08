@@ -18,4 +18,4 @@ for(let i = 0; i < 10_000; i++) {
 
 const percentage = ((totalSums / 10_000) * 100).toFixed(2)
 
-document.querySelector("h1").textContent += `The probability of getting ${sumOfEyes} with ${numberOfDice} dice is ${percentage}`
+document.querySelector("h1").textContent += `The probability of getting ${sumOfEyes} with ${numberOfDice} dice is ${percentage} %`
