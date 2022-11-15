@@ -30,3 +30,4 @@ for(const [arvo, index] of Object.entries(taulu)) {
 function testi() {
   console.log("testi");
 }
+
