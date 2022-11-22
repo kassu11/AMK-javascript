@@ -10,11 +10,11 @@
   <body>
     <dialog>
       <nav>
-        <h2 id="modelTitle"></h2>
+        <h2 id="modelTitle">Title</h2>
         <div id="closeModel">&#10005;</div>
       </nav>
       <p class="loading">Loading...</p>
-      <iframe src="" name="details" height="300px" width="500" title="More details"></iframe>
+      <iframe name="details" height="300" width="500" title="More details"></iframe>
     </dialog>
     <form action="https://api.tvmaze.com/search/shows?">
       <input id="query" name="q" type="text" placeholder="Search" autocomplete="off" spellcheck="false">
@@ -23,7 +23,6 @@
     <div id="shows">
       <p>No results</p>
     </div>
+    <script src="code.js"></script>
   </body>
 </html>
-
-<script src="code.js"></script>
