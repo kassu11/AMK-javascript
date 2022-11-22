@@ -78,10 +78,9 @@ searchFormElem.addEventListener("submit", async function(submitEvent) {
   
     const img = document.createElement("img");
     img.src = show.image?.medium ?? "https://via.placeholder.com/210x295?text=Cover%20image";
-
+    
     const genreContainer = document.createElement("div");
     genreContainer.classList.add("genres");
-
     show.genres.forEach(genre => {
       const genreElem = document.createElement("p");
       genreElem.textContent = genre;
@@ -93,7 +92,8 @@ searchFormElem.addEventListener("submit", async function(submitEvent) {
     summaryElem.classList.add("summary");
     summaryElem.innerHTML = show.summary ?? "<p>No summary available</p>";
     
-    showContainerElem.append(nameElem, img, genreContainer, summaryElem, moreDetailsElem);
+    showContainerElem.append(nameElem, img, summaryElem, moreDetailsElem);
+    if(show.genres?.length) img.after(genreContainer)
     showsContainerElem.append(showContainerElem);
   });
 });
